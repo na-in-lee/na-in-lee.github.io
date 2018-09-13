@@ -13,8 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title                   : "...etc"
+name                     : "나인"
+description              : "Android engineer"
+url                      : "https://na-in-lee.github.io"
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -30,6 +32,13 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Site Author
+author:
+  name             : "나인"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Android engineer"
+  location         : "Korea"
+  
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
