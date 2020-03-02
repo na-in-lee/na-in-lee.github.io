@@ -1,7 +1,5 @@
 ---
-title: Kotlin - 범위지정함수(Scoping functions)
----
-
+title: "Kotlin - 범위지정함수(Scoping functions)"
 date: 2020-02-29
 categories: kotlin
 ---
@@ -9,7 +7,9 @@ categories: kotlin
 Kotlin-scoping functions
 -
 
-**run, with, T.run, T.let, T.also, T.apply **
+
+run, with, T.run, T.let, T.also, T.apply 
+-
 
 1. 정상 vs 확장
 with 와 T.run 매우 비슷하지만 Nice한 방법은 아래와 같음.
@@ -42,6 +42,7 @@ webview.settings?.run {
     databaseEnabled = true
 }
 ```
+
 
 2. This vs it argument (run과 let을 사용하는 방법)
 T.run 과 T.let 비슷하지만 해당 객체를 직접 명시해서 사용할때는 T.let을 사용하는것이 효율적,
