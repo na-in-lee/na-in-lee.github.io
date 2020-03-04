@@ -11,7 +11,7 @@ Kotlin-scoping functions
 run, with, T.run, T.let, T.also, T.apply 
 -
 
-1. 정상 vs 확장
+1.정상 vs 확장
 with 와 T.run 매우 비슷하지만 Nice한 방법은 아래와 같음.
 상황에 따라 선별적으로 사용하는 조건을 알고 있어야 함.
 null check가 필요하다면 run을 활용하자!
@@ -44,7 +44,7 @@ webview.settings?.run {
 ```
 
 
-2. This vs it argument (run과 let을 사용하는 방법)
+2.This vs it argument (run과 let을 사용하는 방법)
 T.run 과 T.let 비슷하지만 해당 객체를 직접 명시해서 사용할때는 T.let을 사용하는것이 효율적,
 run은 아님.
 
@@ -66,7 +66,7 @@ stringVariable?.let {
 }
 ```
 
-3. Return this vs other type
+3.Return this vs other type
 T.let의 경우 let이후 it(value)가 변경됨을 알 수 있음.
 T.alos는 also이후 it(value)가 처음과 동일하다. 동일 it을 가지고 이후 value참조
 T.let 과 T.also
@@ -132,7 +132,7 @@ fun makeDir(path: String): File  {
 fun makeDir(path: String) = path.let{ File(it) }.also{ it.mkdirs() }
 ```
 
-4. T.apply 함수 : 확장함수, this사용(argument, return)
+4.T.apply 함수 : 확장함수, this사용(argument, return)
 
 ```kotlin
 // Normal approach
